@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: rps-game
+  labels:
+    name: rps-game
+    app: rps-betting-game
