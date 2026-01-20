@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 // Configuration
 const PORT = 3000;
+const VERSION = 'v1';
 
 // For local Ganache development:
 // const RPC_URL = 'http://127.0.0.1:7545';
@@ -242,6 +243,7 @@ app.get('/api/health', (req, res) => {
     res.json({
         success: true,
         message: 'RPS Betting Backend is running',
+        version: VERSION,
         owner: ownerAccount,
         contract: CONTRACT_ADDRESS,
         network: RPC_URL.includes('sepolia') ? 'Sepolia' :
