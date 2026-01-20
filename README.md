@@ -29,7 +29,7 @@ chmod +x setup-k8s-cluster.sh
 ./setup-k8s-cluster.sh
 ```
 
-### 5. Edit configuration files (see SETUP-GUIDE.md)
+## 5. Edit configuration files (see SETUP-GUIDE.md)
 ### - k8s/02-redis-deployment.yaml (Redis password)
 ### - k8s/03-backend-deployment.yaml (Blockchain credentials & image)
 ### - k8s/04-frontend-deployment.yaml (Image name)
