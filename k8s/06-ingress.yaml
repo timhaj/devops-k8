@@ -15,10 +15,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - rps-game.yourdomain.com  # Change to your domain
+    - rps-game.yourdomain.com
     secretName: rps-game-tls
   rules:
-  - host: rps-game.yourdomain.com  # Change to your domain
+  - host: rps-game.yourdomain.com
     http:
       paths:
       - path: /api

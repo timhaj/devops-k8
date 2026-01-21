@@ -11,7 +11,6 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  # storageClassName: standard  # Uncomment and adjust based on your cluster
 ---
 apiVersion: v1
 kind: ConfigMap

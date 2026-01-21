@@ -28,12 +28,12 @@ metadata:
   labels:
     app: backend
 spec:
-  replicas: 3  # High availability with 3 instances
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 0  # Cannot tolerate less replicas
-      maxSurge: 1        # Can accommodate 1 extra Pod during update
+      maxUnavailable: 0
+      maxSurge: 1
   selector:
     matchLabels:
       app: backend
